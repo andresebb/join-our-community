@@ -1,0 +1,54 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  background: #e5eff5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.join-us {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  border: 1px solid red;
+  height: auto;
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 1em;
+  overflow: hidden;
+  grid-template-areas: "comunity comunity" "monthly whyus";
+}
+.join-us__comunity {
+  padding: 2.5em 3.3em 1.5em 3em;
+  background: white;
+  grid-area: comunity;
+}
+.join-us__comunity h1 {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  color: #2ab2af;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+.join-us__comunity h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 1.3em;
+  color: #c0df34;
+}
+.join-us__comunity p {
+  font-family: "Karla", sans-serif;
+  font-size: 1.1em;
+  color: #98a6bd;
+}
+.join-us__monthly {
+  padding: 1.5em 2em;
+  background: tomato;
+  grid-area: monthly;
+}
+.join-us__whyus {
+  background: violet;
+  grid-area: whyus;
+  padding: 1.5em 2em;
+}
+
+/*# sourceMappingURL=styles.css.map */

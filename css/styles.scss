@@ -1,0 +1,63 @@
+@import "variables";
+
+body{
+    font-size: 16px;
+    margin: 0;
+    background: $color-LightGray;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.join-us{
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    border: 1px solid red;
+    height: auto;
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 1em;
+    overflow: hidden;
+    grid-template-areas: "comunity comunity"
+                          "monthly whyus";
+
+    &__comunity{
+        h1{
+            font-family: $font;
+            margin: 0;
+            color: $color-blue;
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+
+        h2{
+            font-family: $font;
+            font-size: 1.3em;
+            color: $color-yellow;
+        }
+
+        p{
+            font-family: $font;
+            font-size: 1.1em;
+            color: $color-GrayishBlue;
+        }
+        padding: 2.5em 3.3em 1.5em 3em;
+        background: white;
+        grid-area: comunity;
+    }
+
+    &__monthly{
+        padding: 1.5em 2em;
+        background: tomato;
+        grid-area: monthly;
+    }
+
+    &__whyus{
+        background: violet;
+        grid-area: whyus;
+        padding: 1.5em 2em;
+
+    }
+}
+
+
